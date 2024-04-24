@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mise en page Bootstrap</title>
+		<!--bootstrap css / others css sheet-->
+		<link rel="stylesheet" href="/assets/librairie/css/bootstrap/bootstrap.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="/assets/css/main.css">
+	</head>
+	<body>
+		<header class="mt-5">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-lg-center position-relative pb-5">
+				<div class="navbar-brand ms-5 mb-2 border border-primary p-1 bg-light position-absolute start-0" href="#">
+					<img src="/assets/images/logo.png" alt="" width="60" height="54">
+				</div>
+				<div class="nav-item d-lg-none position-absolute top-1 end-0 w-100 bg-primary p-2 mb-2 text-end">
+					<span class="navbar-toggler-icon fs-2"></span>
+				</div>
+				<ul class="nav nav-pills border-bottom border-primary border-3 pb-2 d-none d-lg-flex flex-lg-row justify-content-lg-center position-relative">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Accueil</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Programme</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="dropdown-item" href="#">Front-end</a>
+							</li>
+							<li>
+								<a class="dropdown-item" href="#">Back-end</a>
+							</li>
+							<li><hr class="dropdown-divider"></li>
+							<li>
+								<a class="dropdown-item" href="#">FullStack</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Cours</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mon compte</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="container-lg">
+			<div>
+				<!--modal alert-->
+				<!-- Button trigger modal --><button type="button" id="myModalInfosBt" data-bs-toggle="modal" data-bs-target="#myModalInfos"> </button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModalInfos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="exampleModalLabel">Apprendre le developpement web</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<img src="/assets/images/img1.jpg" width="100%" alt="">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nobis itaque beatae! Quas quam consequatur voluptates, alias dolores sequi beatae aut consequuntur illum odit sapiente quos perferendis reiciendis omnis corrupti.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row g-0">
+				<div class="col-lg-9">
+					<div class="row g-0 m-1 p-2 border border-5 border-primar">
+						<div
+							class="col-12 mb-1">
+							<!--card-->
+							<div class="card-box d-md-flex gap-3">
+								<div class="card" style="width: 18rem;">
+									<img src="/assets/images/frontend.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Front-End</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">Chapitres</li>
+										<li class="list-group-item">Enseignant</li>
+										<li class="list-group-item">pré-requis</li>
+									</ul>
+									<div class="card-body">
+										<a href="#" class="card-link">S'inscrire</a>
+										<a href="#" class="card-link">
+											<button type="button" class="btn btn-info position-relative w-50">
+												Inscrits
+												<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+													900+
+													<span class="visually-hidden">unread messages</span>
+												</span>
+											</button>
+										</a>
+									</div>
+								</div>
+								<div class="card" style="width: 18rem;">
+									<img src="/assets/images/frontend.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Back-End</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">Chapitres</li>
+										<li class="list-group-item">Enseignant</li>
+										<li class="list-group-item">pré-requis</li>
+									</ul>
+									<div class="card-body">
+										<a href="#" class="card-link">S'inscrire</a>
+										<a href="#" class="card-link">
+											<button type="button" class="btn btn-info position-relative w-50">
+												Inscrits
+												<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+													900+
+													<span class="visually-hidden">unread messages</span>
+												</span>
+											</button>
+										</a>
+									</div>
+								</div>
+								<div class="card" style="width: 18rem;">
+									<img src="/assets/images/frontend.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Front-End</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">Chapitres</li>
+										<li class="list-group-item">Enseignant</li>
+										<li class="list-group-item">pré-requis</li>
+									</ul>
+									<div class="card-body">
+										<a href="#" class="card-link">S'inscrire</a>
+										<a href="#" class="card-link">
+											<button type="button" class="btn btn-info position-relative w-50">
+												Inscrits
+												<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+													900+
+													<span class="visually-hidden">unread messages</span>
+												</span>
+											</button>
+										</a>
+									</div>
+								</div>
+								<div class="card" style="width: 18rem;">
+									<img src="/assets/images/frontend.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Back-End</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item">Chapitres</li>
+										<li class="list-group-item">Enseignant</li>
+										<li class="list-group-item">pré-requis</li>
+									</ul>
+									<div class="card-body">
+										<a href="#" class="card-link">S'inscrire</a>
+										<a href="#" class="card-link">
+											<button type="button" class="btn btn-info position-relative w-50">
+												Inscrits
+												<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+													900+
+													<span class="visually-hidden">unread messages</span>
+												</span>
+											</button>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 mt-2 p-1 border border-2 border-primary">
+							<button type="button" class="btn fw-bold text-capitalize text-primary">
+								why choose our course ?
+							</button>
+							<nav>
+								<div class="nav nav-tabs" id="nav-tab" role="tablist">
+									<button class="nav-link text-primary fw-bold active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Teachers</button>
+									<button class="nav-link text-primary fw-bold" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">schedule</button>
+									<button class="nav-link text-primary fw-bold" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Testimony</button>
+								</div>
+							</nav>
+							<div class="tab-content" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint voluptatem quasi repellendus? Et esse sint veniam cum fugiat expedita sed accusamus, provident ducimus obcaecati perferendis, saepe magni omnis culpa?</div>
+								<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Quia fugit eaque similique natus commodi, aperiam error quod ipsam Lorem ipsum dolor sit, amet consectetur adipisicing elit.  aliquam at consectetur quasi iusto illum quisquam consequatur perferendis ratione id dolores.</div>
+								<div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Ad ipsam, cum natus distinctio dicta ullam dignissimos at debitis amet Lorem ipsum dolor sit amet consectetur adipisicing elit. reprehenderit accusantium voluptatem, est libero nesciunt nihil quia error culpa quod.</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-3 d-flex flex-column justify-content-between m-0 p-1">
+					<div class="row flex-grow-1 g-0 d-flex flex-column gap-2">
+						<aside class="col-12 bg-primary rounded text-center position-relative border border-2 border-primary p-2 pb-5">
+							<div class="h3 text-capitalize text-light fw-bold text-decoration-underline">connexion</div>
+							<!--sing in form-->
+							<form class="position-relative">
+								<div class="mb-3">
+									<div class="input-group input-group-sm mb-3">
+										<span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+										<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required>
+									</div>
+								</div>
+								<div class="mb-3">
+									<div class="input-group input-group-sm mb-3">
+										<span class="input-group-text" id="inputGroup-sizing-sm">Password</span>
+										<input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" required>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary border border-2 position-absolute top-100 end-0 p-1 mt-1 w-25">Sing In</button>
+							</form>
+
+							<!--formulaire d'inscription-->
+							<div
+								class="singUpForm mt-5 position-absolute">
+								<!-- Button trigger modal -->
+								<div class="text-light fst-italic text-decoration-underline ms-2 mt-2" data-bs-toggle="modal" data-bs-target="#createAccountModal">
+									Create account
+								</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="createAccountModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title fw-bold" id="exampleModalLabel">Sing Up Form</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<form class="row g-3 needs-validation" novalidate>
+													<div class="col-md-4">
+														<label for="validationCustom01" class="form-label">First name</label>
+														<input type="text" class="form-control" id="validationCustom01" value="Ari" required>
+														<div class="valid-feedback">
+															Looks good!
+														</div>
+													</div>
+													<div class="col-md-4">
+														<label for="validationCustom02" class="form-label">Email</label>
+														<input type="email" class="form-control" id="validationCustom02" value="mck@email.mail" required>
+														<div class="valid-feedback">
+															Looks good!
+														</div>
+													</div>
+													<div class="col-md-4">
+														<label for="validationCustomUsername" class="form-label">Username</label>
+														<div class="input-group has-validation">
+															<span class="input-group-text" id="inputGroupPrepend">@</span>
+															<input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" value="McKwunthy" required>
+															<div class="invalid-feedback">
+																Please choose a username.
+															</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="validationCustom03" class="form-label">Password</label>
+														<input type="password" class="form-control" id="validationCustom03" required>
+														<div class="invalid-feedback">
+															Please provide a valid city.
+														</div>
+													</div>
+													<div class="col-md-3">
+														<label for="validationCustom04" class="form-label">City</label>
+														<select class="form-select" id="validationCustom04" required>
+															<option selected disabled value="">Choose...</option>
+															<option value="cote-divoire">cote-divoire</option>
+															<option value="burkina fasso">burkina fasso</option>
+															<option value="niger">niger</option>
+														</select>
+														<div class="invalid-feedback">
+															Please select a valid state.
+														</div>
+													</div>
+													<div class="col-md-3">
+														<label for="validationCustom05" class="form-label">Zip</label>
+														<input type="text" class="form-control" id="validationCustom05" required>
+														<div class="invalid-feedback">
+															Please provide a valid zip.
+														</div>
+													</div>
+													<div class="col-12">
+														<div class="form-check">
+															<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+															<label class="form-check-label" for="invalidCheck">
+																Agree to terms and conditions
+															</label>
+															<div class="invalid-feedback">
+																You must agree before submitting.
+															</div>
+														</div>
+													</div>
+													<div class="col-12">
+														<button class="btn btn-primary" type="submit">Create account</button>
+													</div>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+						<aside class="col-12">
+							<img src="/assets/images/price.png" class="w-100" alt="">
+						</aside>
+						<aside class="col-12">
+							<img src="/assets/images/teacher.jpg" class="w-100" alt="">
+						</aside>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container-lg border-top border-5 border-primary pt-3 pb-5">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="h4 text-primary fw-bold fs-2 text-center">Newletter</div>
+						<form class="row g-3 d-flex justify-content-center">
+							<div class="col-auto">
+								<label for="inputPassword2" class="visually-hidden">Email</label>
+								<input type="email" class="form-control" id="inputPassword2" placeholder="email@email.mail">
+							</div>
+							<div class="col-auto">
+								<button type="submit" class="btn btn-primary mb-3">s'abonner</button>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-4">
+						<div class="h4 text-primary fw-bold fs-2 text-center">Nous contacter</div>
+						<div class="text-center fs-3 text-primary">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-envelope-arrow-down-fill" viewbox="0 0 16 16">
+								<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zm.192 8.159 6.57-4.027L8 9.586l1.239-.757.367.225A4.49 4.49 0 0 0 8 12.5c0 .526.09 1.03.256 1.5H2a2 2 0 0 1-1.808-1.144M16 4.697v4.974A4.5 4.5 0 0 0 12.5 8a4.5 4.5 0 0 0-1.965.45l-.338-.207z"/>
+								<path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-1.646a.5.5 0 0 1-.722-.016l-1.149-1.25a.5.5 0 1 1 .737-.676l.28.305V11a.5.5 0 0 1 1 0v1.793l.396-.397a.5.5 0 0 1 .708.708z"/>
+							</svg>
+							email@email.mail
+						</div>
+						<div class="text-center fs-4 text-primary mt-3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-telephone-forward-fill" viewbox="0 0 16 16">
+								<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708"/>
+							</svg>
+							+225 11 22 33 44 55
+						</div>
+					</div>
+					<div class="col-md-4">
+						<img src="/assets/images/school.png" class="w-100" alt="">
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--jquery / bootstrap popper / bootstrap js / others js script-->
+		<script src="/assets/librairie/js/jquery/jquery.3.7.1.js"></script>
+		<script src="/assets/librairie/js/popper/popper.min.js"></script>
+		<script src="/assets/librairie/js/bootstrap/bootstrap.js"></script>
+		<script src="/assets/js/script.js"></script>
+	</body>
+</html>

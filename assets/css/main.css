@@ -1,0 +1,10 @@
+/* add fontawesone link */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+/*google font*/
+@import url(https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap);
+
+/* add style sheet */
+@import url(/assets/css/style.css);
+
+/*others style sheet link*/

@@ -35,7 +35,7 @@ div.nav-item span.navbar-toggler-icon {
 
 /*card box*/
 div.card-box>* {
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 div.singUpForm {
